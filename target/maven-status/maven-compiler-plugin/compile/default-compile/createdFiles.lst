@@ -1,0 +1,7 @@
+presenter\InclusaoProdutoPresenter$1.class
+model\Produto.class
+presenter\InclusaoProdutoPresenter$2.class
+presenter\InclusaoProdutoPresenter.class
+model\ProdutoCollection.class
+view\InclusaoProdutoView.class
+main\Main.class
