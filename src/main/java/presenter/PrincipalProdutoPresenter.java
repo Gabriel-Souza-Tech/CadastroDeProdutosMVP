@@ -29,11 +29,11 @@ public class PrincipalProdutoPresenter implements IProdutoSubscriber {
     }
     
     private void configureView() {
-        principalView.getJmiIncluirProduto().addActionListener(event -> { // Adiciona Action Listener ao item de menu
+        principalView.getJmiIncluirProduto().addActionListener(event -> { 
             try {
-                new InclusaoProdutoPresenter(produtoCollection); // Cria um novo presenter para inclusão
+                new InclusaoProdutoPresenter(produtoCollection); 
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(null, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE); // Exibe mensagem de erro
+                JOptionPane.showMessageDialog(null, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE); 
             }
         });
         

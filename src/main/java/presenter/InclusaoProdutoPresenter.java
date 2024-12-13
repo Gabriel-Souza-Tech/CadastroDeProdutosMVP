@@ -48,17 +48,17 @@ public class InclusaoProdutoPresenter {
 
     private void salvar() {
         String nome = view.getTxtNome().getText();
-        System.out.println("Nome: " + nome);  // Verifica se o nome foi obtido
+        System.out.println("Nome: " + nome);  
         if (nome == null || nome.isEmpty()) {
             throw new IllegalArgumentException("Nome do produto é obrigatório");
         }
         double precoCusto = Double.parseDouble(view.getTxtPrecoCusto().getText());
-        System.out.println("Preço de Custo: " + precoCusto);  // Verifica o valor do preço de custo
+        System.out.println("Preço de Custo: " + precoCusto);  
         if (precoCusto <= 0) {
             throw new IllegalArgumentException("Preço de custo deve ser maior que zero");
         }
         double percentualLucro = Double.parseDouble(view.getTxtPercentualLucro().getText());
-        System.out.println("Percentual de Lucro: " + percentualLucro);  // Verifica o valor do percentual de lucro
+        System.out.println("Percentual de Lucro: " + percentualLucro);  
         if (percentualLucro <= 0) {
             throw new IllegalArgumentException("Percentual de lucro deve ser maior que zero");
         }
