@@ -5,7 +5,7 @@ presenter\InclusaoProdutoPresenter$2.class
 presenter\ListagemProdutoPresenter.class
 model\GerenciadorProdutoPublisher.class
 main\Main.class
-view\ListagemProdutoView$1.class
+presenter\ListagemProdutoPresenter$1.class
 view\PrincipalProdutoView.class
 model\Produto.class
 presenter\InclusaoProdutoPresenter.class

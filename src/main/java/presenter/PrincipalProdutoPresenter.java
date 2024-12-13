@@ -21,7 +21,9 @@ public class PrincipalProdutoPresenter implements IProdutoSubscriber {
     public PrincipalProdutoPresenter(ProdutoCollection produtoCollection) {
         this.principalView = new PrincipalProdutoView();
         this.produtoCollection = produtoCollection;
+        
         this.produtoCollection.addObserver(this);
+        
         configureView();
         this.principalView.setVisible(true);
     }
@@ -37,7 +39,7 @@ public class PrincipalProdutoPresenter implements IProdutoSubscriber {
         
         principalView.getJmiListagemProduto().addActionListener(event -> {
             try {
-                // new ListagemProdutoPresenter(produtoCollectio);
+                 new ListagemProdutoPresenter(produtoCollection);
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
             }

@@ -28,6 +28,13 @@ public class ProdutoCollection extends GerenciadorProdutoPublisher {
         notifyObservers(produto);
     }
     
+    public void excluir(Produto produto) {
+        if(produto == null) {
+            throw new IllegalArgumentException("Escolha um produto valido!");
+        } produtos.remove(produto);
+        
+        notifyObservers(produto);
+    }
     public List<Produto> getProdutos() {
         return produtos;
     }

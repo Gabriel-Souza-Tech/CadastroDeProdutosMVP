@@ -82,6 +82,6 @@ public class InclusaoProdutoPresenter {
     }
 
     private void cancelar() {
-        view.dispose(); // Fecha a janela corretamente
+        view.dispose(); 
     }
 }

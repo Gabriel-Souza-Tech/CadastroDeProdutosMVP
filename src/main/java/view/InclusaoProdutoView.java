@@ -23,7 +23,7 @@ public class InclusaoProdutoView extends javax.swing.JFrame {
         this.setTitle("Inclusão de Produto");
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.pack();
-        this.setLocationRelativeTo(null); // Centraliza na tela
+        this.setLocationRelativeTo(null); 
     }
 
     /**
