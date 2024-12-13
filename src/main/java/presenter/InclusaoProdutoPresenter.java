@@ -3,7 +3,6 @@ package presenter;
 import model.ProdutoCollection;
 import model.Produto;
 import view.InclusaoProdutoView;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,21 +15,12 @@ public class InclusaoProdutoPresenter {
     private Produto produto;
     private final InclusaoProdutoView view;
     private final ProdutoCollection produtos;
-    private final JFrame frame; // Janela que conterá o JPanel
 
     public InclusaoProdutoPresenter(ProdutoCollection produtos) {
         this.produtos = produtos;
 
-        // Criando o frame para conter o JPanel
-        this.frame = new JFrame("Inclusão de Produto");
-        this.view = new InclusaoProdutoView();
-
-        // Configurações do JFrame
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.setContentPane(view); // Adiciona o JPanel ao JFrame
-        frame.pack(); // Ajusta o tamanho da janela ao conteúdo
-        frame.setLocationRelativeTo(null); // Centraliza a janela na tela
-        frame.setVisible(true); // Torna a janela visível
+        this.view = new InclusaoProdutoView(); 
+        this.view.setVisible(true); 
 
         configuraView();
     }
@@ -76,13 +66,22 @@ public class InclusaoProdutoPresenter {
         produtos.incluir(produto);
 
         view.getTxtPrecoVenda().setText(String.format("%.2f", produto.getPrecoVenda()));
-
+        
+        
         System.out.println(produto);
 
         JOptionPane.showMessageDialog(view, "Produto incluído com sucesso!");
+        limparCampos();
+    }
+    
+    public void limparCampos() {
+        view.getTxtNome().setText("");
+        view.getTxtPrecoCusto().setText("");
+        view.getTxtPercentualLucro().setText("");
+        view.getTxtPrecoVenda().setText("");
     }
 
     private void cancelar() {
-        frame.dispose(); // Fecha a janela corretamente
+        view.dispose(); // Fecha a janela corretamente
     }
 }

@@ -1,5 +1,11 @@
-C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVPteste\src\main\java\presenter\InclusaoProdutoPresenter.java
-C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVPteste\src\main\java\model\Produto.java
-C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVPteste\src\main\java\main\Main.java
-C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVPteste\src\main\java\view\InclusaoProdutoView.java
-C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVPteste\src\main\java\model\ProdutoCollection.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\model\GerenciadorProdutoPublisher.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\main\Main.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\model\IProdutoSubscriber.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\presenter\ListagemProdutoPresenter.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\model\Produto.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\view\InclusaoProdutoView.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\view\PrincipalProdutoView.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\presenter\InclusaoProdutoPresenter.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\presenter\PrincipalProdutoPresenter.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\view\ListagemProdutoView.java
+C:\Users\Gabriel\Documents\NetBeansProjects\CadastroDeProdutosMVP\src\main\java\model\ProdutoCollection.java

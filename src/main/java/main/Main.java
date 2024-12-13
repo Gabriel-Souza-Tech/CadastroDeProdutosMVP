@@ -6,6 +6,7 @@ package main;
 
 import model.ProdutoCollection;
 import presenter.InclusaoProdutoPresenter;
+import presenter.PrincipalProdutoPresenter;
 
 
 /**
@@ -15,6 +16,7 @@ import presenter.InclusaoProdutoPresenter;
 public class Main {
     public static void main(String[] args) {
         ProdutoCollection produtos = new ProdutoCollection();
-        new InclusaoProdutoPresenter(produtos);
+        //new InclusaoProdutoPresenter(produtos);
+        new PrincipalProdutoPresenter(produtos);
     }
 }

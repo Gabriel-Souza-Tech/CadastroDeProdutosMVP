@@ -1,7 +1,14 @@
 presenter\InclusaoProdutoPresenter$1.class
-model\Produto.class
+presenter\PrincipalProdutoPresenter.class
+model\IProdutoSubscriber.class
 presenter\InclusaoProdutoPresenter$2.class
+presenter\ListagemProdutoPresenter.class
+model\GerenciadorProdutoPublisher.class
+main\Main.class
+view\ListagemProdutoView$1.class
+view\PrincipalProdutoView.class
+model\Produto.class
 presenter\InclusaoProdutoPresenter.class
 model\ProdutoCollection.class
 view\InclusaoProdutoView.class
-main\Main.class
+view\ListagemProdutoView.class

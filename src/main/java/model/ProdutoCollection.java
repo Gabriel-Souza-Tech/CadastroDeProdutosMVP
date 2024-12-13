@@ -12,7 +12,7 @@ import java.util.Optional;
  *
  * @author Gabriel
  */
-public class ProdutoCollection {
+public class ProdutoCollection extends GerenciadorProdutoPublisher {
     private List<Produto> produtos;
     
     public ProdutoCollection() {
@@ -20,10 +20,12 @@ public class ProdutoCollection {
     }
     
     public void incluir(Produto produto) {
-        if(produtos == null) {
+        if(produto == null) {
             throw new IllegalArgumentException("Informe um produto valido!");
         } 
         produtos.add(produto);
+        
+        notifyObservers(produto);
     }
     
     public List<Produto> getProdutos() {
